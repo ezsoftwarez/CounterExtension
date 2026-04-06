@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>App Open Counter</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <header>
+    <h1>App Open Counter</h1>
+  </header>
+
+  <main>
+    <table id="app-table">
+      <thead>
+        <tr>
+          <th>App</th>
+          <th>Opens</th>
+        </tr>
+      </thead>
+      <tbody id="app-list">
+        <!-- rows inserted by popup.js -->
+      </tbody>
+    </table>
+  </main>
+
+  <footer>
+    <button id="reset-btn">Reset all counts</button>
+  </footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>
