@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "App Open Counter",
+  "version": "1.0.0",
+  "description": "Counts how many times you opened your favorite apps in Chrome.",
+  "permissions": [
+    "storage",
+    "tabs",
+    "windows"
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'; frame-src https://www.youtube.com https://www.youtube-nocookie.com;"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "App Open Counter"
+  }
+}
