@@ -6,7 +6,7 @@
 
 body {
   font-family: "Segoe UI", Arial, sans-serif;
-  min-width: 260px;
+  min-width: 380px;
   background: #f5f6fa;
   color: #222;
 }
@@ -42,6 +42,11 @@ main {
   border-bottom: 1px solid #e0e0e0;
 }
 
+#app-table thead th:nth-child(2),
+#app-table thead th:nth-child(3) {
+  text-align: right;
+}
+
 #app-table tbody tr:nth-child(even) {
   background: #eef2fb;
 }
@@ -59,6 +64,79 @@ td.count {
   text-align: right;
   font-weight: 600;
   color: #1a73e8;
+}
+
+td.time {
+  text-align: right;
+  font-size: 12px;
+  color: #555;
+  white-space: nowrap;
+}
+
+/* YouTube Player */
+#yt-section {
+  border-top: 2px solid #e0e0e0;
+  background: #fff;
+}
+
+#yt-header {
+  background: #ff0000;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 7px 16px;
+  letter-spacing: 0.3px;
+}
+
+#yt-controls {
+  display: flex;
+  gap: 6px;
+  padding: 8px 12px;
+}
+
+#yt-input {
+  flex: 1;
+  padding: 5px 8px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+#yt-input:focus {
+  border-color: #1a73e8;
+}
+
+#yt-load-btn {
+  background: #ff0000;
+  color: #fff;
+  border: none;
+  padding: 5px 12px;
+  font-size: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.15s;
+}
+
+#yt-load-btn:hover {
+  background: #cc0000;
+}
+
+#yt-player-wrap {
+  display: none;
+  padding: 0 12px 10px;
+}
+
+#yt-player-wrap.visible {
+  display: block;
+}
+
+#yt-frame {
+  width: 100%;
+  height: 200px;
+  border: none;
+  border-radius: 4px;
 }
 
 footer {

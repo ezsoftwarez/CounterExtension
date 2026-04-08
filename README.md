@@ -35,7 +35,7 @@ Click the extension icon to open the popup and see the running totals. Use the *
 | File | Purpose |
 |---|---|
 | `manifest.json` | Extension manifest (Manifest V3) |
-| `background.js` | Service worker – detects app navigations and updates counts |
-| `popup.html` | Popup UI |
-| `popup.js` | Reads counts from storage and handles the reset button |
+| `background.js` | Service worker – tracks app navigations, open counts, and time spent |
+| `popup.html` | Popup UI (app table + YouTube player) |
+| `popup.js` | Renders counts and time, handles reset, and manages the YouTube player |
 | `popup.css` | Popup styles |

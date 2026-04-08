@@ -17,6 +17,7 @@
         <tr>
           <th>App</th>
           <th>Opens</th>
+          <th>Time</th>
         </tr>
       </thead>
       <tbody id="app-list">
@@ -24,6 +25,21 @@
       </tbody>
     </table>
   </main>
+
+  <section id="yt-section">
+    <div id="yt-header">▶ YouTube Player</div>
+    <div id="yt-controls">
+      <input type="text" id="yt-input" placeholder="Paste YouTube URL or video ID" />
+      <button id="yt-load-btn">Load</button>
+    </div>
+    <div id="yt-player-wrap">
+      <iframe id="yt-frame"
+        src=""
+        allow="encrypted-media"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </section>
 
   <footer>
     <button id="reset-btn">Reset all counts</button>
